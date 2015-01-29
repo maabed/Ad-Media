@@ -76,7 +76,7 @@ AccountsTemplates.configure({
     showForgotPasswordLink: true,
     showLabels: true,
     showPlaceholders: true,
-    
+
     // privacyUrl: '/privacyPolicy',
     // termsUrl: '/termsOfUse',
 
@@ -121,11 +121,6 @@ AccountsTemplates.configureRoute('forgotPwd', {
 AccountsTemplates.configureRoute('resetPwd' /*, {layoutTemplate: 'simpleLayout'}*/);
 AccountsTemplates.configureRoute('enrollAccount' /*, {layoutTemplate: 'simpleLayout'}*/);
 AccountsTemplates.configureRoute('verifyEmail' /*, {layoutTemplate: 'simpleLayout'}*/);
-
-
-Meteor.startup(function(){
-    AccountsTemplates.init();
-});
 
 
 /*

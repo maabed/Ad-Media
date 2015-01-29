@@ -19,9 +19,6 @@ Router.map(function() {
     this.route('book', {
         path: '/book'
     });
-    this.route('signin', {
-        path: '/signin'
-    });
     this.route('doc', {
         path: '/doc'
     });

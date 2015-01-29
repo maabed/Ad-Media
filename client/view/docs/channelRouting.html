@@ -1,0 +1,214 @@
+<template name='channelRouting'>
+  <center>
+    <h2 class="glyphicon glyphicon-user" style="font-size:14em;color:#55518a"></h2>
+    <h2 style="margin-top: 0;color:#777">Cooming Soon</h2></center>
+    <p style="margin-top: 0;color:#777">For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
+    <div id="content">
+
+      <h2>SD/HD TV Routing</h2>
+      <ul>
+        <h1><u>Baynounah TV SD/HD</u></h1>
+        <h2><u>HD Path:</u></h2>
+        - Main: Direct line from TF54 to DU MUX Room <br>
+        - Backup: ADMZ_8 ---&gt; To DU MUX Room (through Facility Router)
+        <h2><u>SD Path:</u></h2>
+        - To TAS (Badr): ADMZ_8 ---&gt; UDC_1 ---&gt; <b>FCBK_1*</b> ---&gt; Manually patched
+        to Final Etisalat output (AG)<br>
+        - Samacom (Nilesat): ADMZ_8 ---&gt; UDC_1 ---&gt; BYNUN_M, BYNUN_B <br><br>
+        <b>* Facility to Backup Router</b>
+      </ul>
+
+      <hr>
+
+      <ul>
+        <h1><u>AD Sports 1 SD/HD</u></h1>
+        <h3> On Hotbird: SDCH_7 ---&gt; LogoV_4 </h3>
+        <p>Abu Dhabi Sport 1 on Hotbird is telecast from Samacom in Dubai on 11747
+        Horizontal (no longer from Globecast, France). ADSP 1 on Hotbird was blocked
+        by Playout using any playlist and routing it to LOGOV_4. When unblocked,
+        ADSP 1 on Hotbird telecasts SDCH_7 (i.e. downconverted copy of Sports 1 HD).</p>
+        <h2><u>HD Path:</u></h2>
+
+        HD7DEC_1 ---&gt; HDPGM_7 ---&gt; HDLOGO_7 ---&gt; HD_7 (Dolby) ---&gt; To DU MUX Room
+
+        <h2><u>SD Path:</u></h2>
+
+        HD_7 ---&gt; UDC_7 ---&gt; <b>FCBK_3*</b> ---&gt; SPEMG_2 (thru Backup Router)<br><br>
+
+        <b>* Facility to Backup Router</b><br>
+        - Presentation switcher and Logo inserter (Icon Station) are bypassed by
+        manual change over. <br>
+        - Presentation Switcher for AD Sports 1 SD is down.
+
+      </ul>
+
+      <hr>
+
+      <ul>
+
+        <h1><u>AD Sports 2 SD/HD</u></h1>
+
+        <h2><u>HD Path:</u></h2>
+
+        HD8DEC_1 ---&gt; HDPGM_8 ---&gt; HDLOGO_8 ---&gt; HD_8 (Dolby) ---&gt; To DU MUX Room
+
+        <h2><u>SD Path:</u></h2>
+
+        HD_8 ---&gt; UDC_8 ---&gt; LOGOV_5<br><br>
+
+
+        - Icon Station is removed. The input and output cables of the Icon Station
+        are tied together.<br>
+
+
+      </ul>
+
+      <hr>
+
+      <ul>
+
+        <h1><u>AD Sports Extra SD/HD</u></h1>
+
+
+        <h2><u>HD Path:</u></h2>
+
+        - HD9DEC_1 ---&gt; HDPGM_9 ---&gt; HDLOGO_9 &nbsp; &nbsp; &nbsp; (When ADS Extra separates from
+        ADS 1)<br>
+        - HDCF_7 --&gt; UDC_4 --&gt; HDPGM_9 ---&gt; HDLOGO_9 &nbsp; &nbsp; &nbsp; (When ADS Extra joins
+        playlist with ADS 1)<br>
+
+        - HDLOGO_9 ---&gt; HD_9 (No Dolby) ---&gt; To DU MUX Room <br>
+
+        <h2><u>SD Path:</u></h2>
+
+        HD_9 ---&gt; UDC_9 ---&gt; CH6 PGM  <br>
+
+        - Icon Station is removed. It is used for AD+1. LogoV is bypassed by manual
+        changeover.
+
+
+
+
+      </ul>
+
+      <hr>
+
+      <ul>
+
+        <h1><u>PPV:</u></h1>
+
+
+        HD9DEC_2 ---&gt; LOGOV_3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (Main Router) <br>
+        LOGOV_3 ---&gt; <b>MNFC_6*</b> 	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (*Main to Facility
+        Router)<br>
+        MNFC_6 ---&gt; DES 319 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (Facility Router - Don't
+        Change)<br><br>
+
+        - During Live Shows TX will route source (e.g. EXT 26) onto LogoV_3 and
+        during promotions route HD9DEC_2.
+
+
+      </ul>
+
+      <hr>
+
+      <ul>
+
+        <h1><u>AD Al Oula +1 SD/HD</u></h1>
+
+
+        <h2><u>Recording:</u></h2>
+
+        1- Omneon: HD_5 ---&gt; <b>FCMN_6*</b> ---&gt; ENCHD_3 <br>
+        2- Nexio: HDPGM_5 ---&gt; ENCNX_1 <br><br>
+
+        <b>* Facility to Main Router</b>
+
+
+        <h2><u>Playout (On Main Router only):</u></h2>
+
+        <h3><u>HD Chain:</u></h3>
+        Source 'AD+1 HD' is taken to DU Mux room by cable.
+
+        <h3><u>SD Chain:</u></h3>
+        'AD+1 HD' ---&gt; UPC_1. UPC_1 down converts AD+1 HD to AD+1 SD. AD+1 SD goes
+        directly to final output of Etisalat.
+
+
+      </ul>
+
+      <hr>
+
+
+      <ul>
+
+        <h1><u>AD Al Oula SD/HD</u></h1>
+
+        <h2><u>HD Path:</u></h2>
+        HD5DEC_1 ---&gt; HDPGM_5 ---&gt; HDLOGO_5 ---&gt; HD_5 (stereo) ---&gt; To DU MUX Room<br>
+        HD5DEC_2 (Backup Decoder)
+
+        <h2><u>SD Path:</u></h2>
+
+        SDCH_5 ---&gt; LOGOV_1
+
+      </ul>
+
+      <hr>
+
+      <ul>
+
+        <h1><u>AD Al Emarat SD/HD</u></h1>
+
+        <h2><u>HD Path:</u></h2>
+        HD6DEC_1 ---&gt; HDPGM_6 ---&gt; HDLOGO_6 ---&gt; HD_6 (stereo) ---&gt; To DU MUX Room<br>
+        HD6DEC_2 (Backup Decoder)
+
+        <h2><u>SD Path:</u></h2>
+
+        SDCH_6 ---&gt; LOGOV_2
+
+      </ul>
+
+      <hr>
+
+      <ul>
+
+        <h1><u>AD Drama - SD</u></h1>
+
+        CH8DEC_1 ---&gt; CH8_PGM --&gt; LOGOV_8 <br>
+        CH5DEC_2
+
+
+      </ul>
+
+      <hr>
+
+      <ul>
+
+
+        <h1><u>National Geographic Abu Dhabi - SD</u></h1>
+
+        CH7DEC_1 ---&gt; LOGOV_7<br>
+        CH7DEC_2 (Backup Decoder)
+
+
+      </ul>
+
+
+
+
+
+
+      <p></p>
+
+      <hr>
+
+
+      <ul>
+        <small>Written by Eng. Sufian Al-Baw.</small><br>
+        <small>Supervised by Eng. Ayman Asaad.</small>
+      </ul>
+
+      <!-- #EndEditable --></div>
+    </template>

@@ -21,13 +21,11 @@
                 </a>
               </div>
             </div>
+
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
                 <!-- flight section -->
                 <div class="bhoechie-tab-content active">
-                    <center>
-                      <h2 class="glyphicon glyphicon-user" style="font-size:14em;color:#55518a"></h2>
-                      <h2 style="margin-top: 0;color:#777">Cooming Soon</h2></center>
-                      <p style="margin-top: 0;color:#777">For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
+									{{> channelRouting}}
                 </div>
                 <!-- train section -->
                 <div class="bhoechie-tab-content">
@@ -36,7 +34,7 @@
                       <h2 style="margin-top: 0;color:#777">Cooming Soon</h2></center>
                       <p style="margin-top: 0;color:#777">For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
                 </div>
-    
+
                 <!-- hotel search -->
                 <div class="bhoechie-tab-content">
                     <center>
@@ -62,7 +60,7 @@
 
 
 <script>
-  
+
   $(document).ready(function() {
     $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
         e.preventDefault();
